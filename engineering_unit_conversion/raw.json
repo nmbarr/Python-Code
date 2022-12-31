@@ -1,0 +1,32 @@
+{
+    "ANALOG INPUTS" :
+    {
+        "HYPD-100A" : 
+        {
+            "Unscaled Min" : 0.00399,
+            "Unscaled Max" : 0.01998,
+            "Scaled Min" : 0,
+            "Scaled Max" : 3000,
+            "Pre-scaled Units" : "A",
+            "Scaled Units" : "PSIA"  
+        },
+        "HYPD-110B" : 
+        {
+            "Unscaled Min" : 0.00412,
+            "Unscaled Max" : 0.02011,
+            "Scaled Min" : 0,
+            "Scaled Max" : 7500,
+            "Pre-scaled Units" : "A",
+            "Scaled Units" : "PSIA"  
+        },
+        "HYPD-120C" : 
+        {
+            "Unscaled Min" : 0.00396,
+            "Unscaled Max" : 0.02041,
+            "Scaled Min" : 0,
+            "Scaled Max" : 1500,
+            "Pre-scaled Units" : "A",
+            "Scaled Units" : "PSIA"  
+        } 
+    }
+}

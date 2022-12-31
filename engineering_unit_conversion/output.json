@@ -1,0 +1,38 @@
+[
+    {
+        "name": "HYPD-100A",
+        "min": 0.00399,
+        "max": 0.01998,
+        "scaledmin": 0,
+        "scaledmax": 3000,
+        "units": "A",
+        "scaledunits": "PSIA",
+        "fso": 0.01599,
+        "scale_slope": 187617.26078799248,
+        "scale_offset": 2251.40712945591
+    },
+    {
+        "name": "HYPD-110B",
+        "min": 0.00412,
+        "max": 0.02011,
+        "scaledmin": 0,
+        "scaledmax": 7500,
+        "units": "A",
+        "scaledunits": "PSIA",
+        "fso": 0.015989999999999997,
+        "scale_slope": 469043.1519699813,
+        "scale_offset": 5567.542213883677
+    },
+    {
+        "name": "HYPD-120C",
+        "min": 0.00396,
+        "max": 0.02041,
+        "scaledmin": 0,
+        "scaledmax": 1500,
+        "units": "A",
+        "scaledunits": "PSIA",
+        "fso": 0.01645,
+        "scale_slope": 91185.41033434651,
+        "scale_offset": 1138.9057750759878
+    }
+]
