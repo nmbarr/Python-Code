@@ -1,0 +1,23 @@
+﻿[[ANALOG INPUT]],,,,,,,,,
+Channel Name,Serial Number,Output L,Output H,Use Scale?,Min,Max,Scale Units,Comments,Type
+HYPD-100A,100,0.004,0.02,Y,0,1500,PSIA,Transducer A,Current AI
+HYPD-110B,101,0.00399,0.01998,yes,0,3000,PSIA,Transducer B,Current AI
+HYPD-120C,102,0.00396,0.0201,YES,0,7500,PSIA,Transducer C,Current AI
+,,,,,,,,,
+[[ANALOG OUTPUT]],,,,,,,,,
+Channel Name,Output L,Output H,Use Scale?,Min,Max,Scale Units,Comments,Type,
+HYV-200A,0.004,0.02,Y,0,100,%,Proportional Valve A,Current AO,
+HYV-210B,0.00399,0.0199,N,,,,Proportional Valve B,Current AO,
+HYV-220C,0.0041,0.02,no,,,,Proportional Valve C,Current AO,
+,,,,,,,,,
+[[DIGITAL INPUT]],,,,,,,,,
+Channel Name,Comments,Type,,,,,,,
+HYV-100-LS,Limit Switch A,Voltage DI,,,,,,,
+HYV-110-LS,Limit Switch B,Voltage DI,,,,,,,
+HYV-120-LS,Limit Switch C,Voltage DI,,,,,,,
+,,,,,,,,,
+[[DIGITAL OUTPUT]],,,,,,,,,
+Channel Name,Comments,Type,,,,,,,
+HYV-100,Valve A,Voltage DO,,,,,,,
+HYV-110,Valve B,Voltage DO,,,,,,,
+HYV-120,Valve C,Voltage DO,,,,,,,

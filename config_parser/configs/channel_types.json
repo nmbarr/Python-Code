@@ -1,0 +1,17 @@
+{
+    "ANALOG INPUT" : 
+    [
+        "Current AI",
+        "Voltage AI"
+    ],
+
+    "ANALOG OUTPUT" :
+    [
+        "Current AO",
+        "Voltage AO"
+    ],
+
+    "DIGITAL INPUT" : "Voltage DI",
+    
+    "DIGITAL OUTPUT" : "Voltage DO"
+}
