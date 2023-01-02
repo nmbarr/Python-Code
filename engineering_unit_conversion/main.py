@@ -21,12 +21,6 @@ def read_json():
         data = json.load(json_file)
         return data
 
-def unit_conversion(sensor_list):
-    for sensor in sensor_list:
-        sensor.fso = sensor.max - sensor.min
-        sensor.scale_slope = (sensor.scaledmax - sensor.scaledmin) / sensor.fso
-        sensor.scale_offset = sensor.scaledmax - (sensor.scale_slope * sensor.min)
-
 def write_json(data):
 
     all_sensor_data = []
@@ -39,8 +33,13 @@ def write_json(data):
     with open(output_json, 'w') as json_file:
         json.dump(all_sensor_data, json_file, indent = 4)
 
-def main():
-    json_data = read_json()
+def unit_conversion(sensor_list):
+    for sensor in sensor_list:
+        sensor.fso = sensor.max - sensor.min
+        sensor.scale_slope = (sensor.scaledmax - sensor.scaledmin) / sensor.fso
+        sensor.scale_offset = sensor.scaledmax - (sensor.scale_slope * sensor.min)
+
+def build_sensor_class(json_data):
 
     sensors = []
 
@@ -56,9 +55,14 @@ def main():
                                 sensordata['Pre-scaled Units'],
                                 sensordata['Scaled Units'])
             sensors.append(sensor)
+    return sensors
 
-    unit_conversion(sensors)
-    write_json(sensors)
+def main():
+
+    json_data = read_json()
+    sensor_data = build_sensor_class(json_data)
+    unit_conversion(sensor_data)
+    write_json(sensor_data)
 
 if __name__ == "__main__":
     main()
