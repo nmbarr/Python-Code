@@ -1,0 +1,11 @@
+{
+    "HEADER_A" :    
+                {
+                "KEY_A" : "VALUE_A",
+                "KEY_B" : "VALUE_B",
+                "KEY_C" : "VALUE_C"
+                },
+
+    "HEADER_B" :    
+                [1, 2, 3, 4, 5]
+}
